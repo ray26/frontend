@@ -94,8 +94,8 @@ jobs:
         with:
             namespace: 'default'
             manifests: |
-              manifests/fe-deployment.yaml
-              manifests/fe-service.yaml
+              manifests/deployment.yaml
+              manifests/service.yaml
             images: |
               docker.pkg.github.com/wuhan-support/frontend/frontend:latest-${{ github.sha }}
             imagepullsecrets: |
